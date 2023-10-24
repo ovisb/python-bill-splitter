@@ -1,12 +1,14 @@
 import random
 
 
-def get_number_of_friends() -> int:
+def get_number(message: str = "") -> int:
     """
     Get number of friends
+    :param message: Message for the user
+    :return: number
     """
     try:
-        number = int(input("Enter the number of friends joining (including you): "))
+        number = int(input(message))
     except ValueError as vl:
         print("Only input numbers please!")
         raise vl
@@ -27,20 +29,23 @@ def create_friends_dict(friends_number: int) -> dict:
     return friends
 
 
-def calculate_bill(friends: dict) -> None:
+def calculate_bill(friends: dict, total_bill: int, winner: str = "") -> None:
     """
     Evenly split bill to each friend rounded by two decimal points
+
     @param friends: friends dict
+    @param total_bill: total bill to calculate split
+    @param winner: if passed winner does not pay
     """
-    bill_value = int(input("Enter the total bill value: "))
-    split_bill = round(bill_value / len(friends), 2)
+    minus = 1 if winner else 0
+    split_bill = round(total_bill / (len(friends) - minus), 2)
     for name, pay in friends.items():
-        friends[name] = split_bill
+        friends[name] = 0 if winner and name == winner else split_bill
 
 
 def get_random_name(friends) -> str:
     """
-    Get ra
+    Get random name
     @param friends: friends dict
     @return: random name from the friends dict
     """

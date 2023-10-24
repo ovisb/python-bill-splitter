@@ -18,7 +18,16 @@ This is _Bill Splitter_ project that is part of Hyperskill platform from Jetbrai
 
 ## Project description
 
-To add...
+Bill splitter is a simple Python cli application which splits bill evenly between friends. 
+
+It works in the following way:
+- asks the user for number of friends
+- input each friend name based on above number
+- input total bill
+- asks if we want to have a lucky person
+- if input is lucky, a random winner will be selected and excluded from the split calculation.
+- If we don't need a lucky person, bill will be split evenly between all friends.
+- final dict with friends names and bill split values will be printed
 
 ## Changelog
 
@@ -41,8 +50,18 @@ To add...
 - added stage 3 unit tests
 - stage 3 completed
 
+24.10.2023
+- Started stage 4
+- Moved fetching total bill to common input function
+- added better error handling
+- Added new 'lucky' functionality where a person who's picked up randomly does not need to pay for the meal, 
+hence he's excluded from the bill calculation.
+- added stage 4 unit tests
+- added github actions CI config
+- stage 4 completed
+
 #### Project status
-Completed 3/4 stages
+Completed 4/4 stages
 
 #### Install steps
 
