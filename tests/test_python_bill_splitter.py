@@ -36,14 +36,6 @@ def test_negative_create_friends_dict(monkeypatch):
     assert create_friends_dict(friends_number) == {}
 
 
-def test_calculate_bill_even():
-    friends = {"Marc": 0, "Jem": 0, "Monica": 0, "Anna": 0, "Jason": 0}
-    expected = {"Marc": 20, "Jem": 20, "Monica": 20, "Anna": 20, "Jason": 20}
-    bill = 100
-    calculate_bill(friends, bill)
-    assert friends == expected
-
-
 def test_calculate_bill_non_winner():
     friends = {"Marc": 0, "Jem": 0, "Monica": 0, "Anna": 0, "Jason": 0}
     expected = {"Marc": 20, "Jem": 20, "Monica": 20, "Anna": 20, "Jason": 20}

@@ -8,7 +8,7 @@ This is _Bill Splitter_ project that is part of Hyperskill platform from Jetbrai
 
 ## Technologies and tools used
 
-- Python 3.11
+- Python 3.12
 - pytest
 - mypy
 - isort
