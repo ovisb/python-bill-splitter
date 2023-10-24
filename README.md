@@ -23,10 +23,14 @@ To add...
 ## Changelog
 
 24.10.2023
-- Initial github repo creation
+- Initial github repo creation + project structure
+- Taking input from user about the amount of friends he wants to invite
+- Based on the amount of friends, take input for friend names and store them in a dictionary
+- Added unit tests
+- Stage 1 completed
 
 #### Project status
-in the works
+Completed 1/4 stages
 
 #### Install steps
 
