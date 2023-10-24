@@ -26,11 +26,23 @@ To add...
 - Initial github repo creation + project structure
 - Taking input from user about the amount of friends he wants to invite
 - Based on the amount of friends, take input for friend names and store them in a dictionary
-- Added unit tests
+- Added stage 1 unit tests
 - Stage 1 completed
 
+24.10.2023
+- Started stage 2
+- Added function for splitting total bill evenly 
+- added stage 2unit tests
+- stage 2 completed
+
+24.10.2023
+- Started stage 3
+- Added function for randomly choosing name from the friends dict
+- added stage 3 unit tests
+- stage 3 completed
+
 #### Project status
-Completed 1/4 stages
+Completed 3/4 stages
 
 #### Install steps
 
